@@ -1,11 +1,13 @@
+// global variables 
 var color_arr =[];
+let currentColor = "gray";
 
-// 
+
 function update_color(r,c,color){
     color_arr[r][c] = color; 
 }
 
-function add_row(){
+function addRowToArr(){
     var new_row = new Array(columns);
     for(let i = 0; i <columns;i++){
         new_row[i] = "gray";
@@ -13,8 +15,12 @@ function add_row(){
     color_arr.push(new_row);
 }
 
-function add_col(){
+function addColToArr(){
     for(let i = 0; i < columns; i++ ){
         color_arr[i].push("gray"); 
     }
+}
+
+function getColor() {
+    currentColor = document.getElementById("color").value;
 }
