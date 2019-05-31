@@ -2,17 +2,33 @@
 <html>
     <head>
         <title>Pixelate</title>
-         <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="color.js"></script>
     </head>
     <body>
         <div class="container">
             <h1 class="title">Pixelate</h1>
-<!--            grid controls-->
             
+            
+            <!-- grid controls-->
             <div class="gridcontrols">
-                <form>
+                Row: 
+                <input class="row-add" type="button" value="+" onclick="">
+                <input class="row-subtract" type="button" value="-"> 
+                
+                Column: 
+                <input class="col-add" type="button" value="+" onclick="">
+                <input class="col-subtract" type="button" value="-" onclick=""> 
+                
+                <form class="gridControlForm">
+                    Select Color: 
+                    <input type="color" name="color" value="ffffff">
+                    <input type="submit">
                 </form>
+                
             </div>
         </div>
     </body>
+    
+    
 </html>
