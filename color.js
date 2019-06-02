@@ -24,3 +24,12 @@ function addColToArr(){
 function getColor() {
     currentColor = document.getElementById("color").value;
 }
+
+
+function resetColor(){
+    for(let i =0; i < rows; i++){
+        for(let j = 0; j < columns; j++){
+            color_arr[i][j] = "gray";
+        }
+    }
+}
